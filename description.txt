@@ -1,0 +1,1 @@
+I modified the purpose of the reader search from "water" to "quarter" and changed the amount to > $10,000. I did this to see what quarters have higher expenses. There are no quarters where expenditures are over $10,000 in expenditures. 
