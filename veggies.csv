@@ -1,7 +1,32 @@
-name,color, length
-eggplant,purple,8
-tomato,red,6
-corn,yellow,4
-okra,green,4
-arugula,green,7
-broccoli,green,8
+[
+  {
+    "name": "eggplant",
+    "color": "purple",
+    " length": "8"
+  },
+  {
+    "name": "tomato",
+    "color": "red",
+    " length": "6"
+  },
+  {
+    "name": "corn",
+    "color": "yellow",
+    " length": "4"
+  },
+  {
+    "name": "okra",
+    "color": "green",
+    " length": "4"
+  },
+  {
+    "name": "arugula",
+    "color": "green",
+    " length": "7"
+  },
+  {
+    "name": "broccoli",
+    "color": "green",
+    " length": "8"
+  }
+]
