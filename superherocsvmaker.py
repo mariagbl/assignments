@@ -1,27 +1,42 @@
-import json
+#import json
+#import csv
 
-#read super hero json
+#read superheroes.json
 with open('superheroes.json', 'r') as f:
-    data = json.load(f)
+	superheroes = json.load(f)
+
+#print(superheroes) 
+
+#write a csv with rows per member 
 
 #Loop through each member
-members = superheros ['members']
+members = superheroes ['members']
 for members in members:
 	print(member)
 
 #save data for each member into a csv road 
+with open('superheroes.csv', 'w') as f:
+	writer = csv.writer(f)
+	#header
+	headers =['name', 'age', 'secretIdentity', 'powers',	'squadName',	'homeTown',	'formed	secretBase',	'active']
+	
+	#write header 
+	writer.writerow(headers)
 
-import csv
+	#write members into csv file 
+	for superhero in superheroes:
+		print(superheroes)
 
-with open('testwrite.csv', 'w') as f:
-    writer = csv.writer(f)
-    #header
-    header =['name',	'age', 'secretIdentity', 'powers',	'squadName',	'homeTown',	'formed	secretBase',	'active']
-    
-    #Loop through each member
-	members = superheros ['members']
-		for members in members:
-		row = [
+	#define members
+	members = superheroes ['members']
+
+	#Loop through each member
+	for members in members:
+			#alternate format: 
+			#name = member['name']
+			#age = member['age']
+			#squadName = superheroes['secretBase']
+	row = [
 			member ['name'],
 			member ['age'],
 			member ['secretIdentity'], 
@@ -31,5 +46,9 @@ with open('testwrite.csv', 'w') as f:
 			superheroes	['formed'],	
 			superheroes ['secretBase'],
 			superheroes ['active'],
-	   ] 
-    writer.writerow(['val1', 'val2'])
+	] 
+# row = [
+#list all vairables
+#]
+
+write.writerow(rows)
