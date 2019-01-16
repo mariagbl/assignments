@@ -1,14 +1,12 @@
-
 #worked with classmate from design school to check a couple of pieces of code
 #read veggies.csv
 # import csv
-# from pprint import pprint
+from pprint import pprint
 
 # with open('veggies.csv', 'r') as f:
 #     reader = csv.DictReader(f)
 #     rows = list(reader)
-
- vegetables = [
+vegetables = [
   {"name": "eggplant", "color": "purple"},
   {"name": "tomato", "color": "red"},
   {"name": "corn", "color": "yellow"},
