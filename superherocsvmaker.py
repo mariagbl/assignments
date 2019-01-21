@@ -24,8 +24,8 @@ with open('superheroes.csv', 'w') as f:
 	writer.writerow(headers)
 
 	#write members into csv file 
-	for superhero in superheroes:
-		print(superheroes)
+	#for superhero in superheroes:
+		#print(superheroes)
 
 	#define members
 	members = superheroes ['members']
@@ -47,8 +47,13 @@ with open('superheroes.csv', 'w') as f:
 			superheroes ['secretBase'],
 			superheroes ['active'],
 	] 
+	firstpower = member ['powers'][0]
+#write data to csv files 
+
+# Should be enabled: 
 # row = [
 #list all vairables
+#add first power after all headers as continued list "age, firstpower"
 #]
 
 write.writerow(rows)

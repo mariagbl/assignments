@@ -18,4 +18,17 @@ for row in veggies:
 		print(row['name'])
 		green_veggies.append(row)
 
-print(green_veggies)
+print(json.dumps(green_veggies, indent=2))
+
+#write to json files
+with open ('greenveggies.json', 'w') as f:
+		json.dumps(green_veggies,indent=2)
+
+#write to csv
+with open ('greenveggies.json', 'w') as f:
+	writer=csv.writer(f)
+	writer.writerow(['name','color'])
+	for veggie in greenveggies:
+		name= veggie['name']
+		color =veggie['color']
+		writer.writerow([name,color])
